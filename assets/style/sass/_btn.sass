@@ -5,9 +5,13 @@
     text-decoration: none
     transition: .3s
     line-height: 0
-.nav-btn-active:hover
+    &:hover
+        color: $red
+        text-decoration: underline
+.nav-btn-active
     color: $red
     text-decoration: underline
+
 .nav-btn-border
     border: 1px solid $red
     border-radius: 100px
@@ -24,6 +28,9 @@
     background: $red
     color: $white
     padding: 10px 30px
+    &:hover
+        background: $red
+        color: $white
 @media (max-width: 1024px)
     .btn-red
         font-size: 14px
